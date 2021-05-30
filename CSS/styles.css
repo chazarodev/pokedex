@@ -1,0 +1,33 @@
+/**Globales*/
+:root {
+    --fuente: 'Comfortaa', cursive;
+    --fuenteSecuandaria: 'Noto Sans', sans-serif;
+}
+.bg-danger {
+    background: linear-gradient(45deg, #ff6c5c, #c62828)
+}
+.bg-primary {
+    background: linear-gradient(45deg, #F1F451, #FFDD5D)
+}
+h1,h2,h3,p {
+    font-family: var(--fuente);
+}
+
+
+/*Content*/
+h2 .pokemon-logo {
+    height: 150px;
+}
+.card-img-top {
+    height: 200px !important;
+    border: none;
+}
+.card-meta {
+    border-radius: 0px 0px 0px 0px;
+}
+.card-meta p{
+    color: royalblue;
+    font-weight: 700;
+    font-size: 20px;
+}
+
