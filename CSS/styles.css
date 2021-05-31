@@ -18,6 +18,9 @@ h1,h2,h3,p {
 h2 .pokemon-logo {
     height: 150px;
 }
+.card {
+    height: 220px;
+}
 .card-img-top {
     height: 200px !important;
     border: none;
