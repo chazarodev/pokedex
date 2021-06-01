@@ -102,6 +102,9 @@ h2 .pokemon-logo {
     background: linear-gradient(25deg, #fcfa91, #fffc60, #fffc32, #fffb0c);
     color: royalblue;
 }
+.bg-type-psychic .bg-pokemon {
+    background: linear-gradient(25deg, #5400b4, #7c2bd8, #8440d3);
+}
 .bg-type-ice .bg-pokemon {
     background: linear-gradient(145deg, #82b6fa, #ffffff);
     color: #5c3ca5;

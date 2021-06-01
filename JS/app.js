@@ -63,6 +63,7 @@ function consultarAPI(pokemon) {
 
 function mostrarPokemon(datos) {
     const {id, species: {name: nameSpecie}, sprites: {other: {dream_world: {front_default}}}, types:[type] } = datos
+    
     backGroundType(type.type.name)
 
     const pokedexImg = document.createElement('img')
@@ -104,8 +105,6 @@ function limpiarHTML() {
 }
 
 function backGroundType(type) {
-
-    typePokemon
 
     switch (type) {
         case 'fighting':
@@ -165,6 +164,7 @@ function backGroundType(type) {
         default:
             break;
     }
+
 
 }
 
