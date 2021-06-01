@@ -9,6 +9,9 @@
 .bg-primary {
     background: linear-gradient(45deg, #F1F451, #FFDD5D)
 }
+.bg-pokemon {
+    border-radius: 20px;
+}
 h1,h2,h3,p {
     font-family: var(--fuente);
 }
@@ -51,8 +54,68 @@ h2 .pokemon-logo {
     font-weight: 700;
     font-size: 25px;
 }
+.card-subtitle .border-rad {
+    border-radius: 20px;
+    letter-spacing: 4px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.75);
+}
 .footer p{
     font-size: 15px;
     margin-bottom: 0;
 }
 
+/**Back-ground Pokemon*/
+.bg-type-fight .bg-pokemon  {
+    background: linear-gradient(25deg, #ff8a47, #faa26f);
+}
+.bg-type-fly .bg-pokemon {
+    background: linear-gradient(to right, #2f79e7, #6e9fe7, #95b9f0);
+}
+.bg-type-poison .bg-pokemon {
+    background: linear-gradient(to right, #3a1986, #4c2c97, #5c3ca5, #07640f);
+}
+.bg-type-ground .bg-pokemon {
+    background: linear-gradient(to bottom, #ddca5b, #b6a234, #99892d, #796c23);
+}
+.bg-type-rock .bg-pokemon {
+    background: linear-gradient(15deg, #494846, #727271, #adadad, #e0e0e0);
+}
+.bg-type-bug .bg-pokemon {
+    background: linear-gradient(45deg, #0d5e02, #15a303, #1bc205, #1ff103);
+}
+.bg-type-ghost .bg-pokemon {
+    background: linear-gradient(to bottom, #3e2f66, #281e42, #160f29);
+}
+.bg-type-steel .bg-pokemon {
+    background: linear-gradient(15deg, #494846, #788ebd, #95b2f1, #86a9f5);
+}
+.bg-type-fire .bg-pokemon {
+    background: linear-gradient(180deg, #eaf737, #f7e437, #f59342, #f7862a, #f87307, #f76504);
+}
+.bg-type-water .bg-pokemon {
+    background: linear-gradient(45deg, #0011f5, #323ef1, #5b65f1);
+}
+.bg-type-grass .bg-pokemon {
+    background: linear-gradient(220deg, #1ff103, #2ee616, #57ec44 );
+}
+.bg-type-electric .bg-pokemon {
+    background: linear-gradient(25deg, #fcfa91, #fffc60, #fffc32, #fffb0c);
+    color: royalblue;
+}
+.bg-type-ice .bg-pokemon {
+    background: linear-gradient(145deg, #82b6fa, #ffffff);
+    color: #5c3ca5;
+}
+.bg-type-dragon .bg-pokemon {
+    background: linear-gradient(145deg, #ffffff, #e03b26, #b81d08 );
+}
+.bg-type-fairy .bg-pokemon {
+    background: linear-gradient(225deg, #f802e4, #cf17c0b6, #cf17c0 );
+}
+.bg-type-dark .bg-pokemon {
+    background: linear-gradient(225deg, #000000, #222222, #333333 );
+}
+.bg-type-normal .bg-pokemon {
+    background-color: #e49f83;
+}
+    

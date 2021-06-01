@@ -63,6 +63,7 @@ function consultarAPI(pokemon) {
 
 function mostrarPokemon(datos) {
     const {id, species: {name: nameSpecie}, sprites: {other: {dream_world: {front_default}}}, types:[type] } = datos
+    backGroundType(type.type.name)
 
     const pokedexImg = document.createElement('img')
     pokedexImg.setAttribute("src", front_default)
@@ -81,6 +82,7 @@ function mostrarPokemon(datos) {
 
     const pokedexType = document.createElement('p')
     pokedexType.innerHTML = `Type: ${type.type.name}`
+    pokedexType.classList.add('bg-pokemon', 'p-2', 'border-rad', 'text-center')
     typePokemon.appendChild(pokedexType)
 
     
@@ -99,5 +101,70 @@ function limpiarHTML() {
     while(typePokemon.firstChild) {
         typePokemon.removeChild(typePokemon.firstChild)
     }
+}
+
+function backGroundType(type) {
+
+    typePokemon
+
+    switch (type) {
+        case 'fighting':
+            typePokemon.classList.add('bg-type-fight')
+            break;
+        case 'flying':
+            typePokemon.classList.add('bg-type-fly')
+            break;
+        case 'poison':
+            typePokemon.classList.add('bg-type-poison')
+            break;
+        case 'ground':
+            typePokemon.classList.add('bg-type-ground')
+            break;
+        case 'rock':
+            typePokemon.classList.add('bg-type-rock')
+            break;
+        case 'bug':
+            typePokemon.classList.add('bg-type-bug')
+            break;
+        case 'ghost':
+            typePokemon.classList.add('bg-type-ghost')
+            break;
+        case 'steel':
+            typePokemon.classList.add('bg-type-steel')
+            break;
+        case 'fire':
+            typePokemon.classList.add('bg-type-fire')
+            break;
+        case 'water':
+            typePokemon.classList.add('bg-type-water')
+            break;
+        case 'grass':
+            typePokemon.classList.add('bg-type-grass')
+            break;
+        case 'electric':
+            typePokemon.classList.add('bg-type-electric')
+            break;
+        case 'psychic':
+            typePokemon.classList.add('bg-type-psychic')
+            break;
+        case 'ice':
+            typePokemon.classList.add('bg-type-ice')
+            break;
+        case 'dragon':
+            typePokemon.classList.add('bg-type-dragon')
+            break;
+        case 'fairy':
+            typePokemon.classList.add('bg-type-fairy')
+            break;
+        case 'dark':
+            typePokemon.classList.add('bg-type-dark')
+            break;
+        case 'normal':
+            typePokemon.classList.add('bg-type-normal')
+            break;
+        default:
+            break;
+    }
+
 }
 
