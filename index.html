@@ -19,52 +19,55 @@
 
 <body>
 
-  <div class="container bg-danger">
-    <h2 class="m-0 text-uppercase text-center"><img
-        src="https://i.pinimg.com/originals/fd/18/c6/fd18c6d26d4d9d26a0bd9d1a2fb2bd04.png" alt="Pokemon logo"
-        class="pokemon-logo"></h2>
-    <div class="row">
-      <div class="col-12">
-        <!--pokeAPI-->
-        <div class="card" id="imgPokemon">
-          
-        </div>
+  <div class="container-fluid bg-danger">
+    <div class="container">
+      <h2 class="m-0 text-uppercase text-center"><img
+          src="https://i.pinimg.com/originals/fd/18/c6/fd18c6d26d4d9d26a0bd9d1a2fb2bd04.png" alt="Pokemon logo"
+          class="pokemon-logo"></h2>
+      <div class="row">
+        <div class="col-12">
+          <!--pokeAPI-->
+          <div class="card" id="imgPokemon">
+
+          </div>
           <div class="card-meta text-center bg-primary" id="namePokemon">
             <p class="m-0 p-3">
-              Pokemon
+              Pokedex
             </p>
+          </div>
+          <!--card-meta-->
+          <div class="card-body">
+            <p class="class-title text-light mb-2 font-weight-bold" id="idPokemon">
+              ID:
+            </p>
+            <p class="card-subtitle my-2 text-light font-weight-bold text-capitalize" id="typePokemon">
+              Type:
+            </p>
+          </div>
+          <!--card-body-->
         </div>
-        <!--card-meta-->
-        <div class="card-body">
-          <p class="class-title text-light mb-2 font-weight-bold" id="idPokemon">
-            ID:
-          </p>
-          <p class="card-subtitle my-2 text-light" id="height">
-            Type:
-          </p>
-        </div>
-        <!--card-body-->
+        <!--col-12-->
       </div>
-      <!--col-12-->
-    </div>
 
-    <div class="container search">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 main-content">
-          <form id="formulario">
-            <div class="form-group">
-              <input type="text" name="pokemon" class="form-control text-lowercase" placeholder="Nombre o número del pokemon" id="pokemon">
-              <input type="submit" class="btn btn-primary text-uppercase mt-2" value="search">
+      <div class="container search">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 main-content">
+            <form id="formulario">
+              <div class="form-group">
+                <input type="text" name="pokemon" class="form-control text-lowercase"
+                  placeholder="Nombre o número del pokemon" id="pokemon">
+                <input type="submit" class="btn btn-primary btn-circle text-uppercase mt-3" value="search">
               </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <footer class="text-center text-light font-weight-bold py-1 mt-2">
-      <p>Development by Alberto Chazaro</p>
-    </footer>
   </div>
 
+  <footer class="footer text-center bg-dark text-light py-md-4 py-2 mt-0">
+    <p>Development by Alberto Chazaro</p>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -77,7 +80,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./JS/app.js"></script>  
+  <script src="./JS/app.js"></script>
 </body>
 
 </html>

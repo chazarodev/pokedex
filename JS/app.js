@@ -2,7 +2,7 @@ const formulario = document.querySelector('#formulario')
 const imgPokemon = document.querySelector('#imgPokemon')
 const idPokemon = document.querySelector('#idPokemon')
 const namePokemon = document.querySelector('#namePokemon')
-const heightPokemon = document.querySelector('#height')
+const typePokemon = document.querySelector('#typePokemon')
 
 window.addEventListener('load', () => {
     formulario.addEventListener('submit', buscarPokemon)
@@ -53,12 +53,16 @@ function consultarAPI(pokemon) {
             limpiarHTML()
             mostrarPokemon(datos)
         })
+        .catch(error => {
+            console.log(error)
+            mostrarAlerta('Pokemon no existe o está mal escrito')
+        })
         
 }
 
 
 function mostrarPokemon(datos) {
-    const {id, height, name, sprites: {other: {dream_world: {front_default}}}  } = datos
+    const {id, species: {name: nameSpecie}, sprites: {other: {dream_world: {front_default}}}, types:[type] } = datos
 
     const pokedexImg = document.createElement('img')
     pokedexImg.setAttribute("src", front_default)
@@ -67,7 +71,7 @@ function mostrarPokemon(datos) {
     imgPokemon.appendChild(pokedexImg)
 
     const pokedexName = document.createElement('p')
-    pokedexName.innerHTML = `${name}`
+    pokedexName.innerHTML = `${nameSpecie}`
     pokedexName.classList.add('m-0', 'p-3', 'text-center', 'text-capitalize')
     namePokemon.appendChild(pokedexName)
 
@@ -75,9 +79,9 @@ function mostrarPokemon(datos) {
     pokedexID.innerHTML = `ID: ${id}`
     idPokemon.appendChild(pokedexID)
 
-    const pokedexHeight = document.createElement('p')
-    pokedexHeight.innerHTML = `Altura: ${height} cm`
-    heightPokemon.appendChild(pokedexHeight)
+    const pokedexType = document.createElement('p')
+    pokedexType.innerHTML = `Type: ${type.type.name}`
+    typePokemon.appendChild(pokedexType)
 
     
 }
@@ -92,8 +96,8 @@ function limpiarHTML() {
     while(idPokemon.firstChild) {
         idPokemon.removeChild(idPokemon.firstChild)
     }
-    while(heightPokemon.firstChild) {
-        heightPokemon.removeChild(heightPokemon.firstChild)
+    while(typePokemon.firstChild) {
+        typePokemon.removeChild(typePokemon.firstChild)
     }
 }
 
