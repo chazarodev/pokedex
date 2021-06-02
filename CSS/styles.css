@@ -57,7 +57,7 @@ h2 .pokemon-logo {
 .card-subtitle .border-rad {
     border-radius: 20px;
     letter-spacing: 4px;
-    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 2px 1px rgba(29, 28, 28, 0.75);
 }
 .footer p{
     font-size: 15px;
@@ -79,9 +79,11 @@ h2 .pokemon-logo {
 }
 .bg-type-rock .bg-pokemon {
     background: linear-gradient(15deg, #494846, #727271, #adadad, #e0e0e0);
+    color: rgb(253, 213, 165);
 }
 .bg-type-bug .bg-pokemon {
     background: linear-gradient(45deg, #0d5e02, #15a303, #1bc205, #1ff103);
+    color: rgb(192, 20, 192);
 }
 .bg-type-ghost .bg-pokemon {
     background: linear-gradient(to bottom, #3e2f66, #281e42, #160f29);
@@ -91,12 +93,15 @@ h2 .pokemon-logo {
 }
 .bg-type-fire .bg-pokemon {
     background: linear-gradient(180deg, #eaf737, #f7e437, #f59342, #f7862a, #f87307, #f76504);
+    color: #333333;
 }
 .bg-type-water .bg-pokemon {
     background: linear-gradient(45deg, #0011f5, #323ef1, #5b65f1);
+    color: #f3f2f2;
 }
 .bg-type-grass .bg-pokemon {
     background: linear-gradient(220deg, #1ff103, #2ee616, #57ec44 );
+    color: rgb(66, 66, 0)
 }
 .bg-type-electric .bg-pokemon {
     background: linear-gradient(25deg, #fcfa91, #fffc60, #fffc32, #fffb0c);
@@ -107,7 +112,7 @@ h2 .pokemon-logo {
 }
 .bg-type-ice .bg-pokemon {
     background: linear-gradient(145deg, #82b6fa, #ffffff);
-    color: #5c3ca5;
+    color: #400bbd;
 }
 .bg-type-dragon .bg-pokemon {
     background: linear-gradient(145deg, #ffffff, #e03b26, #b81d08 );
