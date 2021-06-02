@@ -1,0 +1,30 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex con HTML CSS y JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chazarodev/pokedex.git"
+  },
+  "keywords": [
+    "Pokedex",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "JS"
+  ],
+  "author": "Alberto Cházaro Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chazarodev/pokedex/issues"
+  },
+  "homepage": "https://github.com/chazarodev/pokedex#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
