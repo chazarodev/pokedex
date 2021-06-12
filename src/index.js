@@ -1,3 +1,4 @@
+import './styles/main.css'
 const formulario = document.querySelector('#formulario')
 const imgPokemon = document.querySelector('#imgPokemon')
 const idPokemon = document.querySelector('#idPokemon')
